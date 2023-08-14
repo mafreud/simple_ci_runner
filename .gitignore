@@ -1,3 +1,6 @@
 # https://dart.dev/guides/libraries/private-files
 # Created by `dart pub`
 .dart_tool/
+
+# API key files
+bin/api_keys.dart

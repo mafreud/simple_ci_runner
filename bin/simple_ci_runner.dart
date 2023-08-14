@@ -1,5 +1,10 @@
-import 'package:simple_ci_runner/simple_ci_runner.dart' as simple_ci_runner;
+import 'package:supabase/supabase.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${simple_ci_runner.calculate()}!');
+import 'api_keys.dart';
+
+void main(List<String> arguments) async {
+  final supabase = SupabaseClient(supabaseUrl, supabaseKey);
+
+  final data = await supabase.from('tasks').select();
+  print(data);
 }
