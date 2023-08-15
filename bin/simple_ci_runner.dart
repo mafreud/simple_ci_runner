@@ -40,6 +40,7 @@ void main(List<String> arguments) async {
     await importCertificates(sshClient);
     await buildIpa(sshClient: sshClient, buildData: buildData);
     await uploadIpaToFad(sshClient: sshClient, buildData: buildData);
+    await stopVM();
 
     await Future.delayed(Duration(seconds: 10));
   }

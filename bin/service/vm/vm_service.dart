@@ -31,3 +31,13 @@ Future<void> launchVM() async {
     print(e);
   }
 }
+
+Future<void> stopVM() async {
+  final shell = Shell();
+
+  try {
+    await shell.run('tart stop vf6');
+  } catch (e) {
+    print(e);
+  }
+}
