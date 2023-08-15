@@ -8,6 +8,8 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
+  dartssh2: ^2.8.2
+  process_run: ^0.13.1
   supabase: ^1.10.0
   # path: ^1.8.0
 
