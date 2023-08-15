@@ -1,8 +1,14 @@
 {
     "cSpell.words": [
+        "appdistribution",
         "dartssh",
         "keychain",
         "mobileprovision",
+        "pkcs",
         "supabase"
-    ]
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "editor.formatOnSave": true
 }
